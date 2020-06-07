@@ -35,8 +35,7 @@ def exe2shellcode(exe):
                     shellcode += '\\x' + '0' + hex(i)[2:]
                 elif i == 14:
                     shellcode += '\\x' + '0' + hex(i)[2:]
-                elif i == 15:
-                    shellcode += '\\x' + '0' + hex(i)[2:]
+
 
 
 
