@@ -5,12 +5,7 @@
 # @Software: PyCharm
 # @Blog    ：https://www.cnblogs.com/nice0e3/
 
-# -*- coding: utf-8 -*-
-# @Time    :  2020/6/7 1:55
-# @Author  : nice0e3
-# @FileName: exe2shellcode.py
-# @Software: PyCharm
-# @Blog    ：https://www.cnblogs.com/nice0e3/
+
 import sys
 
 def exe2shellcode(exe):
@@ -34,6 +29,8 @@ def exe2shellcode(exe):
                 elif i == 13:
                     shellcode += '\\x' + '0' + hex(i)[2:]
                 elif i == 14:
+                    shellcode += '\\x' + '0' + hex(i)[2:]
+                elif i == 15:
                     shellcode += '\\x' + '0' + hex(i)[2:]
 
 
